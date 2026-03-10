@@ -1,6 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0px;
     padding: 0px;
+    height: 100%;
     background-image: url("images/background.png");
     font-size: 8pt;
     font-family: Verdana, Tahoma, sans-serif;
@@ -12,7 +17,7 @@ body {
     background-size: 50px;
 }
 
-img {
+img.banner {
     height: 50px;
 }
 
@@ -33,8 +38,13 @@ h2 {
     margin: auto auto;
     border: 4px solid grey;
     border-radius: 20px;
-    height: auto;
-    overflow: auto;
+    overflow: hidden;
+}
+
+.container > p {
+    clear: both;
+    display: block;
+    vertical-align: bottom;
 }
 
 .review-header {
@@ -60,13 +70,17 @@ h2 {
 }
 
 .container-right {
+    float: right;
     background-color: #A2B964;
     width: 250px;
-    padding: 10px;
-    font-size: 8pt;
-    font-family: Arial, sans-serif;
-    float: right;
     height: auto;
+    font-size: 8pt; 
+    font-family: Arial, sans-serif; 
+}
+
+.container-right > dl > dt {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .reviews-left {
@@ -76,7 +90,6 @@ h2 {
 
 .reviews-left, .reviews-right {
     width: 47%;
-    height: auto;
 }
 
 .reviews-right{
@@ -88,22 +101,29 @@ h2 {
     font-style: italic;
 }
 .review {
-    display: block;
     font-weight: bold;
     font-size: 8pt;
     background-color: #E8DC9B;
     border: 2px solid grey;
     border-radius: 10px;
     padding: 8px;
-    height: auto;
+}
+
+.review > img {
+    vertical-align: top;
 }
 
 .links {
     list-style-type: none;
     padding-left: 0px;
+    margin-bottom: 10pt;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-.links > li {
-    margin-bottom: 10pt;
+.footer {
+    text-align: center;
+    background-color: #A2B964;  
+    padding: 5px;
+    width: 100%;
 }
