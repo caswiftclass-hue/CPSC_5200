@@ -85,11 +85,11 @@ h2 {
 
 .reviews-left {
     float: left;
-    margin-right: 2%;
 }
 
 .reviews-left, .reviews-right {
     width: 47%;
+    margin-left: 2%;
 }
 
 .reviews-right{
