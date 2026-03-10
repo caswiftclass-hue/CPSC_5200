@@ -44,7 +44,6 @@ h2 {
 .container > p {
     clear: both;
     display: block;
-    vertical-align: bottom;
 }
 
 .review-header {
