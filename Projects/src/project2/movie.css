@@ -81,6 +81,7 @@ h2 {
 .container-right > dl > dt {
     font-weight: bold;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .reviews-left {
